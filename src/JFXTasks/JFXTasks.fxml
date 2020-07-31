@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="357.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXTasks.AppController">
+   <children>
+      <TabPane fx:id="mainMenu" prefHeight="398.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="task1Tab" text="Task1">
+               <content>
+                  <fx:include fx:id="task1" source="Task1.fxml" />
+               </content>
+            </Tab>
+          <Tab fx:id="task2Tab" text="Task2">
+               <content>
+                  <fx:include fx:id="task2" source="Task2.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="task3Tab" text="Task3">
+               <content>
+                  <fx:include fx:id="task3" source="Task3.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="aboutTab" text="About">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="131.0" layoutY="154.0" text="Diana Safeeva © 2020" textAlignment="CENTER">
+                           <font>
+                              <Font size="42.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
